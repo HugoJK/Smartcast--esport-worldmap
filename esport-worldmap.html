@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smartcast.ninja | Esport World Map</title>
+		<meta name="description" content="Worldmap starring all e-sport teams" />
+        <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="http://www.smartcast.ninja/map/library/ammap/ammap.js"></script>
+		<script type="text/javascript" src="http://www.smartcast.ninja/map/library/ammap/maps/js/worldLow.js"></script>
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("map",{
+					"type": "map",
+                    "linesAboveImages": false,
+					"pathToImages": "http://www.amcharts.com/lib/3/images/",
+                    "mouseWheelZoomEnabled": true,
+                    "zoomDuration": .75,
+                    "zoomOnDoubleClick": true,
+					"addClassNames": true,
+					"fontSize": 15,
+					"color": "#FFFFFF",
+					"backgroundAlpha": 1,
+					"backgroundColor": "rgba(80,80,80,1)",
+					"dataProvider": {
+						"map": "worldLow",
+						"getAreasFromMap": true,
+						"images": [
+							{
+								"top": 40,
+								"left": 90,
+								"width": 166,
+								"height": 52,
+								"pixelMapperLogo": true,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//smartcast-logo-ninja.svg",
+								"url": "http://www.smartcast.ninja"
+							},
+							{
+								"selectable": true,
+								"longitude": 38.451565,
+								"latitude": 55.674602,
+                                "width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-05.png",
+								"scale": 1, 
+                                "title":"Virtus.Pro",
+							},
+							{
+								"selectable": true,
+								"longitude": 17.386328,
+								"latitude": 59.969243,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-03.png",
+								"scale": 1, 
+                                "title":"Ninjas in Pyjamas",
+							},
+							{
+								"selectable": true,
+								"longitude": -3.460196,
+								"latitude": 40.853661,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-02.png",
+								"scale": 1, 
+                                "title":"G2 Esports",
+							},
+							{
+								"selectable": true,
+								"longitude": 30.846047,
+								"latitude": 50.901628,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-12.png",
+								"scale": 1, 
+                                "title":"Natus Vincere",
+							},
+							{
+								"selectable": true,
+								"longitude": 9.479878,
+								"latitude": 50.758616,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-06.png",
+								"scale": 1, 
+                                "title":"Team Alternate",
+							},
+							{
+								"selectable": true,
+								"longitude": 7.298121,
+								"latitude": 51.937039,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-10.png",
+								"scale": 1, 
+                                "title":"SK Gaming",
+							},
+							{
+								"selectable": true,
+								"longitude": 103.450283,
+								"latitude": 4.526706,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-18.png",
+								"scale": 1, 
+                                "title":"Titan",
+							},
+							{
+								"selectable": true,
+								"longitude": 11.898523,
+								"latitude": 56.015825,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-17.png",
+								"scale": 1, 
+                                "title":"CPH Wolves",
+							},
+							{
+								"selectable": true,
+								"longitude": 2.193468,
+								"latitude": 49.106235,
+								"width": 40,
+								"height": 40,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-marker.png",
+								"scale": 1, 
+                                "title":"Paris",
+							},
+                            {
+								"selectable": true,
+								"longitude": 3.100529,
+								"latitude": 44.393806,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-16.png",
+								"scale": 1, 
+                                "title":"Millenium",
+							},
+                            {
+								"selectable": true,
+								"longitude": -0.210903,
+								"latitude": 45.288711,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-22.png",
+								"scale": 1, 
+                                "title":"Team LDLC",
+							},
+                            {
+								"selectable": true,
+								"longitude": -2.373974,
+								"latitude": 46.985386,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-21.png",
+								"scale": 1, 
+                                "title":"Melty Esport Club",
+							},
+                            {
+								"selectable": true,
+								"longitude": 6.210903,
+								"latitude": 45.288711,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-51.png",
+								"scale": 1, 
+                                "title":"Vitality",
+							},
+							{
+								"selectable": true,
+								"longitude": -1.104287,
+								"latitude": 38.385892,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-15.png",
+								"scale": 1, 
+                                "title":"Origen",
+							},
+							{
+								"selectable": true,
+								"longitude": -4.301689,
+								"latitude": 37.343205,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-24.png",
+								"scale": 1, 
+                                "title":"Giants Gaming",
+							},
+							{
+								"selectable": true,
+								"longitude": 4.500571,
+								"latitude": 50.951332,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-52.png",
+								"scale": 1, 
+                                "title":"Epsilon Esport",
+							},
+							{
+								"selectable": true,
+								"longitude": 13.340447,
+								"latitude": 48.086087,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-71.png",
+								"scale": 1, 
+                                "title":"Red Bull",
+							},
+							{
+								"selectable": true,
+								"longitude": -121.886302,
+								"latitude": 37.612302,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-30.png",
+								"scale": 1, 
+                                "title":"Team Solomid",
+							},
+							{
+								"selectable": true,
+								"longitude": -82.012816,
+								"latitude": 35.244325,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-29.png",
+								"scale": 1, 
+                                "title":"EnvyUs",
+							},
+							{
+								"selectable": true,
+								"longitude": -82.61468,
+								"latitude": 28.322918,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-26.png",
+								"scale": 1, 
+                                "title":"Team Liquid",
+							},
+							{
+								"selectable": true,
+								"longitude": -94.614342,
+								"latitude": 30.297121,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-36.png",
+								"scale": 1, 
+                                "title":"Complexity gaming",
+							},
+							{
+								"selectable": true,
+								"longitude": -88.219538,
+								"latitude": 42.40701,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-19.png",
+								"scale": 1, 
+                                "title":"Optic Gaming",
+							},
+							{
+								"selectable": true,
+								"longitude": -82.953229,
+								"latitude": 40.282497,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-13.png",
+								"scale": 1, 
+                                "title":"Denial Esport",
+							},
+							{
+								"selectable": true,
+								"longitude": -80.47054,
+								"latitude": 40.912868,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-73.png",
+								"scale": 1, 
+                                "title":"Revenge Gaming",
+							},
+							{
+								"selectable": true,
+								"longitude": -73.962887,
+								"latitude": 41.339254,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-48.png",
+								"scale": 1, 
+                                "title":"Faze Clan",
+							},
+							{
+								"selectable": true,
+								"longitude": -79.041113,
+								"latitude": 44.327114,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-53.png",
+								"scale": 1, 
+                                "title":"Luminosity Gaming",
+							},
+							{
+								"selectable": true,
+								"longitude": -47.126052,
+								"latitude": -19.843845,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-65.png",
+								"scale": 1, 
+                                "title":"Kabum",
+							},
+							{
+								"selectable": true,
+								"longitude": 116.076273,
+								"latitude": 40.768387,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-58.png",
+								"scale": 1, 
+                                "title":"Invictus Gaming",
+							},
+							{
+								"selectable": true,
+								"longitude": 150.683449,
+								"latitude": -32.672936,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-67.png",
+								"scale": 1, 
+                                "title":"Chiefs Esports Club",
+							},
+							{
+								"selectable": true,
+								"longitude": 116.509482,
+								"latitude": -30.322293,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-68.png",
+								"scale": 1, 
+                                "title":"Avant Garde",
+							},
+							{
+								"selectable": true,
+								"longitude": 114.23752,
+								"latitude": 24.035761,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-47.png",
+								"scale": 1, 
+                                "title":"Hong Kong Esports",
+							},
+                            {
+								"selectable": true,
+								"longitude": -0.480401,
+								"latitude": 52.043432,
+                                "width": 40,
+								"height": 40,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-marker.png",
+								"scale": 1, 
+                                "title":"London",
+							},
+							{
+								"selectable": true,
+								"longitude": -0.30084,
+								"latitude": 58.302757,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-04.png",
+								"scale": 1, 
+                                "title":"Fnatic",
+							},
+							{
+								"selectable": true,
+								"longitude": -4.718016,
+								"latitude": 57.556764,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-09.png",
+								"scale": 1, 
+                                "title":"Team Dignitas",
+							},
+							{
+								"selectable": true,
+								"longitude": -8.165569,
+								"latitude": 55.99765,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-14.png",
+								"scale": 1, 
+                                "title":"H2k",
+							},
+							{
+								"selectable": true,
+								"longitude": -10.284377,
+								"latitude": 53.759889,
+                                "width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-20.png",
+								"scale": 1, 
+                                "title":"London Conspiracy",
+							},
+							{
+								"selectable": true,
+								"longitude": -9.853433,
+								"latitude": 50.694048,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-23.png",
+								"scale": 1, 
+                                "title":"Gambit Gaming",
+							},
+							{
+								"selectable": true,
+								"longitude": 13.143459,
+								"latitude": 52.835745,
+								"width": 40,
+								"height": 40,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-marker.png",
+								"scale": 1, 
+                                "title":"Berlin",
+							},
+							{
+								"selectable": true,
+								"longitude": 17.348062,
+								"latitude": 53.707119,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-11.png",
+								"scale": 1, 
+                                "title":"Mousesports",
+							},
+							{
+								"selectable": true,
+								"longitude": 17.424509,
+								"latitude": 51.922889,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-08.png",
+								"scale": 1, 
+                                "title":"Unicorn of Loves",
+							},
+							{
+								"selectable": true,
+								"longitude": 29.044502,
+								"latitude": 41.131604,
+								"width": 40,
+								"height": 40,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-marker.png",
+								"scale": 1, 
+                                "title":"Istanbul",
+							},
+							{
+								"selectable": true,
+								"longitude": 32.637526,
+								"latitude": 40.171576,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-50.png",
+								"scale": 1, 
+                                "title":"Dark Passage",
+							},
+							{
+								"selectable": true,
+								"longitude": 30.229435,
+								"latitude": 38.540962,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-49.png",
+								"scale": 1, 
+                                "title":"Besiktas Esports",
+							},
+							{
+								"selectable": true,
+								"longitude": 120.91283,
+								"latitude": 31.343665,
+								"width": 40,
+								"height": 40,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-marker.png",
+								"scale": 1, 
+                                "title":"Shangai",
+							},
+							{
+								"selectable": true,
+								"longitude": 119.599197,
+								"latitude": 34.926996,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-60.png",
+								"scale": 1, 
+                                "title":"Edward Gaming",
+							},
+							{
+								"selectable": true,
+								"longitude": 116.750785,
+								"latitude": 34.04992,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-59.png",
+								"scale": 1, 
+                                "title":"LGD Gaming",
+							},
+							{
+								"selectable": true,
+								"longitude": 115.2128,
+								"latitude": 31.86422,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-57.png",
+								"scale": 1, 
+                                "title":"OMG",
+							},
+							{
+								"selectable": true,
+								"longitude": 115.847701,
+								"latitude": 29.499314,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-56.png",
+								"scale": 1, 
+                                "title":"Royal Club",
+							},
+							{
+								"selectable": true,
+								"longitude": 117.888442,
+								"latitude": 27.74031,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-55.png",
+								"scale": 1, 
+                                "title":"Team WE / Positive Energy",
+							},
+							{
+								"selectable": true,
+								"longitude": 120.725778,
+								"latitude": 27.100679,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-54.png",
+								"scale": 1, 
+                                "title":"Vici Gaming",
+							},
+                            {
+								"selectable": true,
+								"longitude": 121.673811,
+								"latitude": 24.818454,
+								"width": 40,
+								"height": 40,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-marker.png",
+								"scale": 1, 
+                                "title":"Taipei",
+							},
+							{
+								"selectable": true,
+								"longitude": 121.370664,
+								"latitude": 21.180017,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-46.png",
+								"scale": 1, 
+                                "title":"Midnight Sun Esports",
+							},
+							{
+								"selectable": true,
+								"longitude": 123.740724,
+								"latitude": 22.590973,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-45.png",
+								"scale": 1, 
+                                "title":"Taipei Assassins",
+							},
+							{
+								"selectable": true,
+								"longitude": 124.898194,
+								"latitude": 25.01904,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-44.png",
+								"scale": 1, 
+                                "title":"Yoe Flash Wolves",
+							},
+							{
+								"selectable": true,
+								"longitude": 127.543842,
+								"latitude": 37.917085,
+								"width": 40,
+								"height": 40,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-marker.png",
+								"scale": 1, 
+                                "title":"Seoul",
+							},
+							{
+								"selectable": true,
+								"longitude": 122.790341,
+								"latitude": 36.252436,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-43.png",
+								"scale": 1, 
+                                "title":"CJ Entus",
+							},
+							{
+								"selectable": true,
+								"longitude": 122.280106,
+								"latitude": 38.762776,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-42.png",
+								"scale": 1, 
+                                "title":"Incredible Miracle",
+							},
+							{
+								"selectable": true,
+								"longitude": 123.410018,
+								"latitude": 40.885816,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-41.png",
+								"scale": 1, 
+                                "title":"KT Rolsters",
+							},
+							{
+								"selectable": true,
+								"longitude": 126.055665,
+								"latitude": 41.695953,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-40.png",
+								"scale": 1, 
+                                "title":"Jin Air Green Wings",
+							},
+							{
+								"selectable": true,
+								"longitude": 129.307607,
+								"latitude": 41.385553,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-39.png",
+								"scale": 1, 
+                                "title":"Najin",
+							},
+							{
+								"selectable": true,
+								"longitude": 131.732784,
+								"latitude": 40.403334,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-38.png",
+								"scale": 1, 
+                                "title":"Prime Optimus",
+							},
+							{
+								"selectable": true,
+								"longitude": 133.055607,
+								"latitude": 38.395356,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-37.png",
+								"scale": 1, 
+                                "title":"SK Telecom",
+							},
+							{
+								"selectable": true,
+								"longitude": 132.890254,
+								"latitude": 36.06229,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-31.png",
+								"scale": 1, 
+                                "title":"KOO Tigers",
+							},
+							{
+								"selectable": true,
+								"longitude": 130.91546,
+								"latitude": 34.20846,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-70.png",
+								"scale": 1, 
+                                "title":"Rebels Anarchy",
+							},
+							{
+								"selectable": true,
+								"longitude": 127.952489,
+								"latitude": 33.311189,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-69.png",
+								"scale": 1, 
+                                "title":"SBENU Sonicboom",
+							},
+							{
+								"selectable": true,
+								"longitude": -45.910473,
+								"latitude": -21.952161,
+								"width": 40,
+								"height": 40,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-marker.png",
+								"scale": 1, 
+                                "title":"São Paulo",
+							},
+							{
+								"selectable": true,
+								"longitude": -40.916063,
+								"latitude": -19.123824,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-07.png",
+								"scale": 1, 
+                                "title":"INTZ",
+							},
+							{
+								"selectable": true,
+								"longitude": -39.385861,
+								"latitude": -21.386017,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-01.png",
+								"scale": 1, 
+                                "title":"paiN Gaming",
+							},
+							{
+								"selectable": true,
+								"longitude": -39.974548,
+								"latitude": -23.794019,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-66.png",
+								"scale": 1, 
+                                "title":"KeyD Stars",
+							},
+							{
+								"selectable": true,
+								"longitude": -41.789666,
+								"latitude": -25.671296,
+							"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-64.png",
+								"scale": 1, 
+                                "title":"Dexterity-Santos",
+							},
+							{
+								"selectable": true,
+								"longitude": -44.340642,
+								"latitude": -26.775,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-63.png",
+								"scale": 1, 
+                                "title":"CNB esport club",
+							},
+							{
+								"selectable": true,
+								"longitude": -47.284076,
+								"latitude": -26.5551,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-62.png",
+								"scale": 1, 
+                                "title":"GenerationX",
+							},
+							{
+								"selectable": true,
+								"longitude": -43.52741,
+								"latitude": -17.863689,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-61.png",
+								"scale": 1, 
+                                "title":"JaYoB",
+							},
+							{
+								"selectable": true,
+								"longitude": -118.663112,
+								"latitude": 35.320087,
+								"width": 40,
+								"height": 40,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-marker.png",
+								"scale": 1, 
+                                "title":"Los Angeles",
+							},
+							{
+								"selectable": true,
+								"longitude": -115.531794,
+								"latitude": 38.622344,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-34.png",
+								"scale": 1, 
+                                "title":"Team Impulse",
+							},
+							{
+								"selectable": true,
+								"longitude": -114.194702,
+								"latitude": 36.046684,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-33.png",
+								"scale": 1, 
+                                "title":"Gravity Gaming",
+							},
+							{
+								"selectable": true,
+								"longitude": -115.274661,
+								"latitude": 33.36675,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-32.png",
+								"scale": 1, 
+                                "title":"Immortals",
+							},
+							{
+								"selectable": true,
+								"longitude": -118.823098,
+								"latitude": 32.282934,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-74.png",
+								"scale": 1, 
+                                "title":"Renegades",
+							},
+							{
+								"selectable": true,
+								"longitude": -122.474388,
+								"latitude": 33.323652,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-25.png",
+								"scale": 1, 
+                                "title":"NRG Esports",
+							},
+							{
+								"selectable": true,
+								"longitude": -121.703893,
+								"latitude": 38.928939,
+								"width": 40,
+								"height": 40,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-marker.png",
+								"scale": 1, 
+                                "title":"San Fransisco",
+							},
+							{
+								"selectable": true,
+								"longitude": -121.647693,
+								"latitude": 41.325325,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-27.png",
+								"scale": 1, 
+                                "title":"Cloud9",
+							},
+							{
+								"selectable": true,
+								"longitude": -124.214648,
+								"latitude": 40.32702,
+								"width": 60,
+								"height": 60,
+								"imageURL": "http://www.smartcast.ninja/map/ressources//Logo-map-35.png",
+								"scale": 1, 
+                                "title":"Elements / Evil Genius (GoodGame)",
+							}
+						],
+                        "lines": [
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									2.193468,
+									2.95
+								],
+								"latitudes": [
+									49.106235,
+									45.3
+								],
+								"arrow": "none",
+                                "arrowSize": 10,
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									2.193468,
+									-0.210903
+								],
+								"latitudes": [
+									49.106235,
+									45.288711
+								],
+								"arrow": "none",
+                                "arrowSize": 10,
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									2.193468,
+									-2.373974,
+								],
+								"latitudes": [
+									49.106235,
+									46.985386
+								],
+								"arrow": "none",
+                                 "arrowSize": 10,
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									2.193468,
+									6.210903
+								],
+								"latitudes": [
+									49.106235,
+									45.288711
+								],
+								"arrow": "none", 
+                                "arrowSize": 10,
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-0.336752,
+									-0.552224
+								],
+								"latitudes": [
+									58.150995,
+									51.910281
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-4.78984,
+									-0.588136
+								],
+								"latitudes": [
+									57.459999,
+									51.910281
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-8.129657,
+									-0.516312
+								],
+								"latitudes": [
+									55.836135,
+									51.865809
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-10.356201,
+									-0.4804
+								],
+								"latitudes": [
+									53.610538,
+									51.932501
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-9.853433,
+									-0.588136
+								],
+								"latitudes": [
+									50.511119,
+									51.976906
+								],
+								"arrow": "none",
+                                "arrowSize": 10,
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									13.105235,
+									17.348062
+								],
+								"latitudes": [
+									52.673288,
+									53.593479
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									13.105235,
+									17.309838
+								],
+								"latitudes": [
+									52.742987,
+									51.757042
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+								    29.044502,
+									30.191211
+								],
+								"latitudes": [
+									41.13160,
+									38.540962
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+								    29.044502,
+								    32.637526
+								],
+								"latitudes": [
+									41.13160,
+									40.171576
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									117.175151,
+									 120.91283
+								],
+								"latitudes": [
+									33.889814,
+									31.343665
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									115.034333,
+									 120.91283
+								],
+								"latitudes": [
+									31.821872,
+									31.343665
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									115.243193,
+									 120.91283
+								],
+								"latitudes": [
+									29.159102,
+									31.343665
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									117.488442,
+									 120.91283
+								],
+								"latitudes": [
+									27.08031,
+									31.343665
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									120.725778,
+									120.91283
+								],
+								"latitudes": [
+									26.190679,
+									31.343665
+								],
+								"arrow": "none"
+							},
+                            {
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									119.599197,
+									120.91283
+								],
+								"latitudes": [
+									34.926996,
+									31.343665
+								],
+								"arrow": "none"
+							},
+                            {
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									121.70137,
+									121.260429
+								],
+								"latitudes": [
+									24.718039,
+									21.025259
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									121.70137,
+									123.685606
+								],
+								"latitudes": [
+									24.692922,
+									22.386616
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									121.756488,
+									124.953312
+								],
+								"latitudes": [
+									24.74315,
+									24.918788
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									122.224988,
+									127.433607
+								],
+								"latitudes": [
+									36.485779,
+									37.80795
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									122.390341,
+									127.488724
+								],
+								"latitudes": [
+									38.719648,
+									37.80795
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									123.437577,
+									127.59896
+								],
+								"latitudes": [
+									40.655499,
+									37.851623
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									126.193459,
+									127.378489
+								],
+								"latitudes": [
+									41.571972,
+									37.938892
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									129.114695,
+									127.516283
+								],
+								"latitudes": [
+									41.240189,
+									38.047833
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									131.59499,
+									127.59896
+								],
+								"latitudes": [
+									40.361214,
+									37.960694
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									132.972931,
+									127.461165
+								],
+								"latitudes": [
+									38.286933,
+									37.982488
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									132.862696,
+									127.516283
+								],
+								"latitudes": [
+									35.90569,
+									37.960694
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									131.160343,
+									127.461165
+								],
+								"latitudes": [
+									34.04826,
+									37.82979
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									128.22493,
+									127.516283
+								],
+								"latitudes": [
+									33.011189,
+									37.851623
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-45.95953,
+									-43.52741
+								],
+								"latitudes": [
+									-22.071774,
+									-17.863689
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-45.910473,
+									-40.416063
+								],
+								"latitudes": [
+									-22.026159,
+									-19.309713
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-45.861416,
+									-39.385861
+								],
+								"latitudes": [
+									-21.934885,
+									-21.569205
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-45.812358,
+									-39.974548
+								],
+								"latitudes": [
+									-22.026159,
+									-24.063924
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-45.763301,
+									-41.789666
+								],
+								"latitudes": [
+									-22.026159,
+									-25.892872
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-45.812358,
+									-44.340642
+								],
+								"latitudes": [
+									-22.071774,
+									-27.03832
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-45.861416,
+									-47.333133
+								],
+								"latitudes": [
+									-22.026159,
+									-26.775
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-121.647693,
+									-121.696327
+								],
+								"latitudes": [
+									41.219837,
+									38.746779
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-124.158685,
+									-121.780271
+								],
+								"latitudes": [
+									40.069728,
+									38.790552
+								],
+								"arrow": "none"
+							},
+                            {
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-118.514538,
+									-122.628668
+								],
+								"latitudes": [
+									35.410121,
+									33.151047
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-118.565965,
+									-118.874525
+								],
+								"latitudes": [
+									35.410121,
+									32.108301
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-118.565965,
+									-115.274661
+								],
+								"latitudes": [
+									35.32598,
+									33.107842
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-118.463112,
+									-114.246128
+								],
+								"latitudes": [
+									35.368062,
+									36.121762
+								],
+								"arrow": "none"
+							},
+							{
+								"selectable": true,
+								"color": "rgba(53,53,53,1)",
+								"thickness": 2.5,
+								"longitudes": [
+									-118.514538,
+									-115.531794
+								],
+								"latitudes": [
+									35.452158,
+									38.501321
+								],
+								"arrow": "none"
+							},
+						]
+					},
+					"balloon": {
+						"horizontalPadding": 15,
+						"borderAlpha": 0,
+						"borderThickness": 1,
+						"verticalPadding": 15
+					},
+					"areasSettings": {
+						"color": "rgba(129,129,129,1)",
+						"outlineColor": "rgba(80,80,80,1)",
+						"rollOverOutlineColor": "rgba(80,80,80,1)",
+						"rollOverBrightness": 20,
+						"selectedBrightness": 20,
+						"selectable": true,
+						"unlistedAreasAlpha": 0,
+						"unlistedAreasOutlineAlpha": 0
+					},
+					"imagesSettings": {
+						"alpha": 1,
+						"color": "rgba(129,129,129,1)",
+						"outlineAlpha": 0,
+						"rollOverOutlineAlpha": 0,
+						"outlineColor": "rgba(80,80,80,1)",
+						"rollOverBrightness": 20,
+						"selectedBrightness": 20,
+						"selectable": true
+					},
+					"linesSettings": {
+						"color": "rgba(129,129,129,1)",
+						"selectable": true,
+						"rollOverBrightness": 20,
+						"selectedBrightness": 20
+					},
+					"zoomControl": {
+						"zoomControlEnabled": true,
+						"homeButtonEnabled": false,
+						"panControlEnabled": false,
+						"right": 38,
+						"bottom": 20,
+						"minZoomLevel": 1.2,
+                        "maxZoomLevel": 5.4,
+						"gridHeight": 8,
+						"gridAlpha": 0,
+						"gridBackgroundAlpha": 0,
+						"gridColor": "#FFFFFF",
+						"draggerAlpha": 0,
+						"buttonCornerRadius": 2,
+                        "homeIconColor": "rgba(80,80,80,1)",
+					}
+				});
+		</script>
+	</head>
+	<body style="margin: 0;background-color: rgba(80,80,80,1);">
+		<div id="map" style="position:absolute; width: 100%; height: 100%;"></div>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-68618291-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+        </script>
+	</body>
+</html>

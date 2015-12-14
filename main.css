@@ -1,0 +1,7 @@
+.amcharts-map-image {
+    z-index:1000;
+}
+
+.amcharts-map-line {
+    z-index:-1000;
+}
